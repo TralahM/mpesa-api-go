@@ -1,4 +1,4 @@
-# MPESA Golang API Wrapper  [![CircleCI](https://circleci.com/gh/AndroidStudyOpenSource/mpesa-api-go.svg?style=shield)](https://circleci.com/gh/AndroidStudyOpenSource/mpesa-api-go) [![Maintainability](https://api.codeclimate.com/v1/badges/54dcfdfde1daf230516f/maintainability)](https://codeclimate.com/github/AndroidStudyOpenSource/mpesa-api-go/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/54dcfdfde1daf230516f/test_coverage)](https://codeclimate.com/github/AndroidStudyOpenSource/mpesa-api-go/test_coverage)
+# MPESA Golang API Wrapper
 
 
 The wrapper provides convenient access to the [Safaricom MPESA Daraja API](https://developer.safaricom.co.ke/apis-explorer) for applications written in server-side Golang. :rocket:
@@ -7,7 +7,7 @@ The wrapper provides convenient access to the [Safaricom MPESA Daraja API](https
 You can install the package by running:
 
 ```
-go get github.com/AndroidStudyOpenSource/mpesa-api-go
+go get github.com/tralahm/mpesa-api-go
 ```
 
 ## Usage
@@ -15,8 +15,8 @@ The package needs to be configured with your **appKey** and **appSecret** which 
 
 ```
 const (
-	appKey = "YOUR_APP_KEY"		    
-	appSecret = "YOUR_APP_SECRET"	   
+	appKey = "YOUR_APP_KEY"
+	appSecret = "YOUR_APP_SECRET"
 )
 ```
 
@@ -29,7 +29,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/tralahm/mpesa-api-go"
 )
 
 const (
@@ -68,16 +68,16 @@ func main() {
 ```
 
 ### C2B
-This api allows you to register C2B Callback URLs to Safaricom, and also Simulate a C2B Transaction in ```Sandbox```
+This api allows you to register C2B Callback URLs to Safaricom, and also Simulate a C2B Transaction in `Sandbox`
 
-This is a simple demo to show how to register C2B Callback URL:
+This is a simple demo to show how to register C2B Callback URL
 
 ```go
 package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/tralahm/mpesa-api-go"
 )
 
 const (
@@ -114,7 +114,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/tralahm/mpesa-api-go"
 )
 
 const (
@@ -153,7 +153,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/tralahm/mpesa-api-go"
 )
 
 const (
@@ -197,7 +197,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/tralahm/mpesa-api-go"
 )
 
 const (
@@ -244,7 +244,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/tralahm/mpesa-api-go"
 )
 
 const (
@@ -289,7 +289,7 @@ package main
 
 import (
 	"log"
-	"github.com/AndroidStudyOpenSource/mpesa-api-go"
+	"github.com/tralahm/mpesa-api-go"
 )
 
 const (
@@ -332,7 +332,6 @@ We’re glad you’re interested in MPESA Daraja Golang SDK, and we’d love to 
 
 When submitting code, please make every effort to follow existing conventions and style in order to keep the code as readable as possible. We look forward to you submitting a Pull Request.
 
-Use [gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow).
 Always tag releases to `develop` and `master`.
 
 Thanks, and please do take it for a joyride!
